@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#070b14">
+  <title>Red & Processed Meat and Colorectal Cancer Risk | Meta-Analysis (Group 6)</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Glow Backdrop -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Deck Container -->
+  <div class="deck-container" id="presentationDeck">
+
+    <!-- Top Reading Progress Fill -->
+    <div class="top-progress" aria-hidden="true">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Slides Viewport (15 Full Slides) -->
+    <div class="slides-wrapper" id="slidesWrapper" aria-live="polite">
+
+      <!-- ==========================================
+           SLIDE 1: COVER & TITLE
+           ========================================== -->
+      <section class="slide active" data-index="0" data-title="Title & Overview">
+        <div class="slide-scroll">
+          <div class="slide-body center-content">
+            <div class="anim-fade-up max-900 text-center">
+              
+              <div class="pill-badge">
+                <span class="status-dot"></span>
+                <span>Meta-Analysis Scientific Report &bull; Group 6</span>
+              </div>
+
+              <h1 class="hero-title">
+                Association Between Red and Processed Meat Consumption and Colorectal Cancer Risk
+              </h1>
+
+              <p class="hero-subtitle">
+                A Comprehensive Systematic Review and Random-Effects Meta-Analysis of Epidemiological Studies
+              </p>
+
+              <!-- Research Team Panel -->
+              <div class="team-panel">
+                <div class="team-badge">Research Team (Group &ndash; 6)</div>
+                <div class="team-grid">
+                  <div class="team-member"><span class="id-tag">823</span><span>Md. Shimul Ahmed Bappi</span></div>
+                  <div class="team-member"><span class="id-tag">824</span><span>Raaj Chandra Dash</span></div>
+                  <div class="team-member"><span class="id-tag">865</span><span>Shohanur Rahman</span></div>
+                  <div class="team-member"><span class="id-tag">866</span><span>Mirajul Islam Raju</span></div>
+                  <div class="team-member"><span class="id-tag">870</span><span>Md. Ariful Hossain Sourav</span></div>
+                  <div class="team-member"><span class="id-tag">880</span><span>Ajoy Kumar</span></div>
+                </div>
+              </div>
+
+              <div class="quick-stats-row">
+                <div class="quick-stat"><strong>~1.38M</strong><span>Total Participants</span></div>
+                <div class="quick-stat"><strong>14,357</strong><span>Incident CRC Cases</span></div>
+                <div class="quick-stat"><strong>17</strong><span>Effect Estimates</span></div>
+                <div class="quick-stat"><strong>16</strong><span>Prospective Studies</span></div>
+              </div>
+
+              <div class="hint-text">
+                Press <kbd>&rarr;</kbd> / <kbd>Space</kbd> or swipe left to begin presentation
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 2: COLORECTAL CANCER IMAGES
+           ========================================== -->
+      <section class="slide" data-index="1" data-title="Colorectal Cancer">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">Clinical Context</div>
+            <h2 class="slide-title">Colorectal Cancer Pathophysiology &amp; Diagnosis</h2>
+            <p class="slide-subtitle">Anatomical localization, mucosal adenoma-carcinoma sequences, and clinical manifestation.</p>
+          </div>
+          <div class="slide-body">
+            <div class="img-duo-container anim-fade-up">
+              <figure class="img-frame">
+                <img src="img/Colorectal Cancer.png" alt="Colorectal Cancer Tumor Localization" loading="eager" onerror="this.parentElement.classList.add('img-fallback')">
+                <figcaption><strong>Figure A:</strong> Luminal Colorectal Tumor Formation and Anatomical Sites</figcaption>
+              </figure>
+              <figure class="img-frame">
+                <img src="img/colon-cancer-colorectal-cancer-symptoms-diagnosis.jpg" alt="Colorectal Cancer Symptoms and Diagnosis" loading="eager" onerror="this.parentElement.classList.add('img-fallback')">
+                <figcaption><strong>Figure B:</strong> Clinical Presentation, Warning Symptoms &amp; Diagnostic Colonoscopy</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 3: EXECUTIVE SUMMARY & DASHBOARD
+           ========================================== -->
+      <section class="slide" data-index="2" data-title="Executive Summary">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">01 // Key Findings Overview</div>
+            <h2 class="slide-title">Executive Summary &amp; Meta-Analysis Dashboard</h2>
+            <p class="slide-subtitle">Quantitative synthesis of 1,379,000 individuals across 17 epidemiological risk estimates.</p>
+          </div>
+          <div class="slide-body">
+            <div class="metric-grid anim-fade-up">
+              <div class="metric-card border-rose">
+                <div class="label">Pooled Relative Risk (REML + HK)</div>
+                <div class="value text-rose">1.12</div>
+                <div class="sub">95% CI: 1.03 &ndash; 1.22 (t = 2.91, p = 0.0103)</div>
+              </div>
+              <div class="metric-card border-cyan">
+                <div class="label">Common Effect Estimate</div>
+                <div class="value text-cyan">1.09</div>
+                <div class="sub">95% CI: 1.05 &ndash; 1.13 (z = 4.72, p &lt; 0.0001)</div>
+              </div>
+              <div class="metric-card border-amber">
+                <div class="label">Between-Study Heterogeneity</div>
+                <div class="value text-amber">55.3%</div>
+                <div class="sub">I&sup2; (95% CI: 22.8&ndash;74.1%), Q = 35.77 (p = 0.0031)</div>
+              </div>
+              <div class="metric-card border-teal">
+                <div class="label">95% Prediction Interval</div>
+                <div class="value text-teal">0.94 &ndash; 1.34</div>
+                <div class="sub">Spans 1.00 &bull; True effect in new study may be null</div>
+              </div>
+            </div>
+
+            <div class="card anim-fade-up mt-1">
+              <h3 class="panel-title">Global Colorectal Cancer Breakdown by Sex (WHO / IARC GLOBOCAN)</h3>
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Epidemiological Metric</th>
+                      <th>Men / Males</th>
+                      <th>Women / Females</th>
+                      <th>Male-to-Female Ratio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Annual New Cases</td><td class="font-mono">~1.07 million</td><td class="font-mono">~857,000</td><td class="font-mono text-cyan">1.25 : 1 (Count)</td></tr>
+                    <tr><td>Age-Standardized Incidence Rate</td><td class="font-mono">23.6 per 100,000</td><td class="font-mono">16.3 per 100,000</td><td class="font-mono text-cyan">1.45 : 1 (Rate)</td></tr>
+                    <tr><td>Annual Deaths</td><td class="font-mono">~499,800</td><td class="font-mono">~404,200</td><td class="font-mono text-cyan">1.24 : 1 (Count)</td></tr>
+                    <tr><td>Age-Standardized Mortality Rate</td><td class="font-mono">9.86 per 100,000</td><td class="font-mono">6.50 per 100,000</td><td class="font-mono text-cyan">1.52 : 1 (Rate)</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 4: INTRODUCTION & PICO FRAMEWORK
+           ========================================== -->
+      <section class="slide" data-index="3" data-title="Introduction &amp; PICO">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">02 // Clinical Rationale</div>
+            <h2 class="slide-title">Background &amp; PICO Problem Formulation</h2>
+            <p class="slide-subtitle">Colorectal cancer (CRC) is a major cause of global oncologic mortality; diet is a key modifiable factor.</p>
+          </div>
+          <div class="slide-body">
+            <div class="card anim-fade-up mb-1">
+              <p class="text-body">
+                Thermal meat processing generates heterocyclic amines (HCAs), polycyclic aromatic hydrocarbons (PAHs), and endogenous N-nitroso compounds (NOCs). Individual prospective cohorts have produced conflicting results, ranging from notable positive risk associations to null associations. This meta-analysis unifies the epidemiological evidence using standardized random-effects modeling.
+              </p>
+            </div>
+
+            <div class="grid-2 anim-fade-up">
+              <div class="pico-card">
+                <div class="pico-badge bg-blue">P</div>
+                <div>
+                  <h4>Population</h4>
+                  <p>Adult cohorts from prospective epidemiological studies reporting verified incident Colorectal Cancer (CRC).</p>
+                </div>
+              </div>
+              <div class="pico-card">
+                <div class="pico-badge bg-rose">E</div>
+                <div>
+                  <h4>Exposure</h4>
+                  <p>Highest intake category of red meat (beef, pork, lamb) or combined red and industrially processed meat.</p>
+                </div>
+              </div>
+              <div class="pico-card">
+                <div class="pico-badge bg-amber">C</div>
+                <div>
+                  <h4>Comparison</h4>
+                  <p>Lowest intake category (baseline reference group within each prospective cohort study).</p>
+                </div>
+              </div>
+              <div class="pico-card">
+                <div class="pico-badge bg-teal">O</div>
+                <div>
+                  <h4>Outcome</h4>
+                  <p>Incident colorectal, colon, or rectal cancer quantified as Relative Risk (RR) with 95% Confidence Intervals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 5: PRISMA FLOWCHART
+           ========================================== -->
+      <section class="slide" data-index="4" data-title="PRISMA Flowchart">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">03 // PRISMA Methodology</div>
+            <h2 class="slide-title">Study Selection Flow (PRISMA 2020)</h2>
+            <p class="slide-subtitle">Systematic database interrogation across PubMed, Scopus, and Web of Science followed dual-screening protocols.</p>
+          </div>
+          <div class="slide-body">
+            <div class="prisma-flow anim-fade-up">
+              <div class="prisma-node">
+                <div>
+                  <div class="node-step">Identification</div>
+                  <div class="node-title">Records Identified Through Systematic Database Search</div>
+                </div>
+                <div class="node-count">n = 31</div>
+              </div>
+              <div class="prisma-arrow">&darr;</div>
+              <div class="prisma-node">
+                <div>
+                  <div class="node-step">Screening</div>
+                  <div class="node-title">Records Screened by Title &amp; Abstract</div>
+                </div>
+                <div class="node-side">
+                  <span class="node-count">n = 31</span>
+                  <div class="exclusion-bubble">Excluded (n = 10): Non-colorectal cancer outcomes, non-original studies</div>
+                </div>
+              </div>
+              <div class="prisma-arrow">&darr;</div>
+              <div class="prisma-node">
+                <div>
+                  <div class="node-step">Eligibility</div>
+                  <div class="node-title">Full-Text Articles Assessed for Eligibility</div>
+                </div>
+                <div class="node-side">
+                  <span class="node-count">n = 21</span>
+                  <div class="exclusion-bubble">Excluded (n = 4): Effect measure other than RR (e.g. HR, OR without conversion)</div>
+                </div>
+              </div>
+              <div class="prisma-arrow">&darr;</div>
+              <div class="prisma-node node-success">
+                <div>
+                  <div class="node-step text-teal">Included Synthesis</div>
+                  <div class="node-title">Studies Included in Quantitative Meta-Analysis</div>
+                  <div class="node-sub">Fung 2010 contributed 2 independent strata (HPFS Men &amp; NHS Women)</div>
+                </div>
+                <div class="node-count text-teal">17 Estimates <small>(16 Articles)</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 6: STATISTICAL METHODOLOGY
+           ========================================== -->
+      <section class="slide" data-index="5" data-title="Statistical Methods">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">04 // Statistical Framework</div>
+            <h2 class="slide-title">Mathematical Formulation &amp; Analytical Models</h2>
+            <p class="slide-subtitle">Inverse-variance weighting, Restricted Maximum Likelihood (REML), and Hartung–Knapp adjustment.</p>
+          </div>
+          <div class="slide-body">
+            <div class="grid-3 anim-fade-up">
+              <div class="card">
+                <div class="card-kicker text-blue">Effect Transformation</div>
+                <h3>Log Relative Risk &amp; Variance</h3>
+                <p class="text-sm">Relative risk values and 95% confidence intervals were transformed to log space:</p>
+                <div class="formula-box">
+                  y<sub>i</sub> = ln(RR<sub>i</sub>)<br>
+                  SE<sub>i</sub> = [ln(Upper) &minus; ln(Lower)] / (2 &times; 1.96)<br>
+                  v<sub>i</sub> = SE<sub>i</sub>&sup2;
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-kicker text-cyan">Primary Model</div>
+                <h3>REML &amp; Hartung-Knapp</h3>
+                <p class="text-sm">Between-study variance was estimated using Restricted Maximum Likelihood with Hartung-Knapp adjustment:</p>
+                <div class="formula-box">
+                  I&sup2; = (Q &minus; df) / Q &times; 100%<br>
+                  &tau;&sup2; = 0.0060, &tau; = 0.077<br>
+                  95% Prediction Interval: [0.94, 1.34]
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-kicker text-teal">Diagnostics Suite</div>
+                <h3>Robustness &amp; Bias Diagnostics</h3>
+                <ul class="check-list">
+                  <li><strong>Small-Study Bias:</strong> Funnel plot symmetry, Egger regression &amp; Begg rank tests.</li>
+                  <li><strong>Influence Diagnostics:</strong> Cook's D, studentized residuals, DFFITS, hat values.</li>
+                  <li><strong>Sensitivity:</strong> Iterative leave-one-out meta-analysis runs across all 17 estimates.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 7: CHARACTERISTICS OF INCLUDED STUDIES
+           ========================================== -->
+      <section class="slide" data-index="6" data-title="Study Characteristics">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">05 // Evidence Base</div>
+            <h2 class="slide-title">Characteristics of 17 Included Estimates</h2>
+            <p class="slide-subtitle">16 prospective studies comprising ~1,379,000 participants and 14,357 incident colorectal cancer cases.</p>
+          </div>
+          <div class="slide-body">
+            <div class="table-container anim-fade-up max-table-h">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Study &amp; Year</th>
+                    <th>Country</th>
+                    <th>Sex Stratum</th>
+                    <th>Sample Size</th>
+                    <th>CRC Cases</th>
+                    <th>RR (95% CI)</th>
+                    <th>Weight (Common / Random)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Willett 1990</td><td>USA</td><td>Female</td><td class="font-mono">88,751</td><td class="font-mono">150</td><td class="font-mono text-cyan">1.77 [1.09, 2.88]</td><td class="font-mono">0.5% / 1.7%</td></tr>
+                  <tr><td>Giovannucci 1994</td><td>USA</td><td>Male</td><td class="font-mono">47,949</td><td class="font-mono">201</td><td class="font-mono text-cyan">1.71 [1.15, 2.55]</td><td class="font-mono">0.8% / 2.5%</td></tr>
+                  <tr><td>Chen 1998</td><td>USA</td><td>Male</td><td class="font-mono">425</td><td class="font-mono">208</td><td class="font-mono">1.17 [0.68, 2.02]</td><td class="font-mono">0.4% / 1.4%</td></tr>
+                  <tr><td>Singh 1998</td><td>USA</td><td>Male + Female</td><td class="font-mono">32,051</td><td class="font-mono">127</td><td class="font-mono">1.41 [0.90, 2.21]</td><td class="font-mono">0.6% / 2.0%</td></tr>
+                  <tr><td>Pietinen 1999</td><td>Finland</td><td>Male</td><td class="font-mono">27,111</td><td class="font-mono">185</td><td class="font-mono">1.10 [0.71, 1.71]</td><td class="font-mono">0.6% / 2.1%</td></tr>
+                  <tr><td>Jarvinen 2001</td><td>Finland</td><td>Male + Female</td><td class="font-mono">9,959</td><td class="font-mono">109</td><td class="font-mono">1.50 [0.77, 2.93]</td><td class="font-mono">0.3% / 1.0%</td></tr>
+                  <tr><td>Tiemersma 2002</td><td>Netherlands</td><td>Male + Female</td><td class="font-mono">639</td><td class="font-mono">102</td><td class="font-mono">1.60 [0.89, 2.87]</td><td class="font-mono">0.4% / 1.2%</td></tr>
+                  <tr><td>Flood 2003</td><td>USA</td><td>Female</td><td class="font-mono">45,496</td><td class="font-mono">311</td><td class="font-mono">1.10 [0.83, 1.45]</td><td class="font-mono">1.6% / 4.5%</td></tr>
+                  <tr><td>English 2004</td><td>Australia</td><td>Male + Female</td><td class="font-mono">37,112</td><td class="font-mono">452</td><td class="font-mono text-teal">1.03 [0.98, 1.08]</td><td class="font-mono text-teal">51.2% / 17.8%</td></tr>
+                  <tr><td>Lin 2004</td><td>USA</td><td>Female</td><td class="font-mono">37,547</td><td class="font-mono">202</td><td class="font-mono text-rose">0.66 [0.40, 1.09]</td><td class="font-mono">0.5% / 1.6%</td></tr>
+                  <tr><td>Cross 2007</td><td>USA</td><td>Male + Female</td><td class="font-mono">494,036</td><td class="font-mono">5,107</td><td class="font-mono text-cyan">1.24 [1.13, 1.37]</td><td class="font-mono text-rose">12.8% / 13.9%</td></tr>
+                  <tr><td>Kabat 2007</td><td>Canada</td><td>Female</td><td class="font-mono">48,666</td><td class="font-mono">617</td><td class="font-mono">1.12 [0.86, 1.46]</td><td class="font-mono">1.7% / 4.9%</td></tr>
+                  <tr><td>Lee 2009</td><td>China</td><td>Female</td><td class="font-mono">73,224</td><td class="font-mono">394</td><td class="font-mono">0.80 [0.59, 1.08]</td><td class="font-mono">1.3% / 3.9%</td></tr>
+                  <tr><td>N&ouml;thlings 2009</td><td>USA</td><td>Male + Female</td><td class="font-mono">2,531</td><td class="font-mono">1,009</td><td class="font-mono">0.96 [0.74, 1.24]</td><td class="font-mono">1.9% / 5.2%</td></tr>
+                  <tr><td>Cross 2010</td><td>USA</td><td>Male + Female</td><td class="font-mono">300,948</td><td class="font-mono">2,719</td><td class="font-mono text-cyan">1.20 [1.05, 1.37]</td><td class="font-mono">7.2% / 11.4%</td></tr>
+                  <tr><td>Fung 2010 (men)</td><td>USA</td><td>Male</td><td class="font-mono">45,490</td><td class="font-mono">1,032</td><td class="font-mono">1.08 [0.97, 1.21]</td><td class="font-mono">9.9% / 12.8%</td></tr>
+                  <tr><td>Fung 2010 (women)</td><td>USA</td><td>Female</td><td class="font-mono">87,256</td><td class="font-mono">1,432</td><td class="font-mono">1.12 [0.99, 1.26]</td><td class="font-mono">8.3% / 12.0%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 8: PRIMARY FOREST PLOT (FIGURE 1 FROM PDF)
+           ========================================== -->
+      <section class="slide" data-index="7" data-title="Primary Forest Plot">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">06 // Figure 1 (PDF)</div>
+            <h2 class="slide-title">Primary Forest Plot: Random-Effects Meta-Analysis</h2>
+            <p class="slide-subtitle">Study-specific RRs with 95% CIs. Squares reflect random weights; diamonds reflect pooled estimates.</p>
+          </div>
+          <div class="slide-body">
+            <div class="forest-plot-card anim-fade-up">
+              <div class="forest-scroll-x">
+                <svg id="primaryForestSvg" viewBox="0 0 940 540" class="forest-svg" role="img" aria-label="Figure 1: Forest plot of 17 estimates and pooled CRC risk"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 9: PUBLICATION BIAS & FUNNEL PLOT (FIGURE 2 FROM PDF)
+           ========================================== -->
+      <section class="slide" data-index="8" data-title="Publication Bias">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">07 // Figure 2 (PDF)</div>
+            <h2 class="slide-title">Publication Bias: Funnel Plot &amp; Small-Study Tests</h2>
+            <p class="slide-subtitle">Symmetric scatter around pooled estimate. Formal regression and rank correlation show no significant bias.</p>
+          </div>
+          <div class="slide-body">
+            <div class="grid-2 anim-fade-up items-center">
+              <div class="card funnel-wrapper">
+                <svg id="primaryFunnelSvg" viewBox="0 0 540 370" class="funnel-svg" role="img" aria-label="Figure 2: Funnel plot for publication bias"></svg>
+              </div>
+
+              <div class="stacked-cards">
+                <div class="card">
+                  <div class="card-kicker text-cyan">Egger's Linear Regression Test</div>
+                  <h3 class="test-stat">z = 0.98 &bull; p = 0.325</h3>
+                  <p class="text-sm">Limit estimate b = 0.072 (95% CI: &minus;0.040 to 0.184). Intercept demonstrates no statistically significant asymmetry.</p>
+                </div>
+                <div class="card">
+                  <div class="card-kicker text-teal">Begg's Rank-Correlation Test</div>
+                  <h3 class="test-stat">z = 0.66 &bull; p = 0.510</h3>
+                  <p class="text-sm">Kendall's tau indicates no significant rank correlation between effect size and standard error.</p>
+                </div>
+                <div class="warning-callout">
+                  <strong>Statistical Power Note:</strong> With 17 studies and moderate heterogeneity (I&sup2; = 55.3%), small-study effects cannot be ruled out completely despite non-significant p-values.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 10: SENSITIVITY & INFLUENCE (FIGURE 3 FROM PDF)
+           ========================================== -->
+      <section class="slide" data-index="9" data-title="Sensitivity &amp; Influence">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">08 // Figure 3 (PDF)</div>
+            <h2 class="slide-title">Sensitivity &amp; Influence Diagnostics (Figure 3)</h2>
+            <p class="slide-subtitle">Studentized residuals, Cook's D, DFFITS, cov.r, tau2.del, QE.del, hat values, and weights across studies 1–17.</p>
+          </div>
+          <div class="slide-body">
+            
+            <!-- Switcher Tabs between Interactive SVG & PDF Image -->
+            <div class="tab-controls">
+              <button class="tab-btn active" id="tabSvgDiag" type="button">Vector SVG Plots (8 Diagnostics)</button>
+              <button class="tab-btn" id="tabImgDiag" type="button">Original Figure 3 Image</button>
+            </div>
+
+            <!-- Panel 1: Rendered Interactive 8 SVG Subplots -->
+            <div class="diag-view active" id="viewSvgDiag">
+              <div class="influence-grid-svg" id="influencePlotsGrid"></div>
+            </div>
+
+            <!-- Panel 2: Direct Local Image from /img -->
+            <div class="diag-view" id="viewImgDiag">
+              <div class="card text-center">
+                <div class="plot-img-box">
+                  <img src="img/influence-diagnostics-plot.png" alt="Figure 3: Influence diagnostics from PDF" class="plot-img" onerror="this.parentElement.classList.add('img-fallback')">
+                </div>
+                <p class="text-sm text-muted mt-05">Figure 3. Influence diagnostics for the random-effects meta-analysis (REML). Red points identify studies 9 (English 2004) and 11 (Cross 2007).</p>
+              </div>
+            </div>
+
+            <div class="grid-2 mt-1">
+              <div class="card">
+                <h3 class="panel-title flex-center gap-05">
+                  <span class="dot-indicator bg-rose"></span> Top Influential Studies
+                </h3>
+                <div class="cohort-highlight border-l-cyan">
+                  <div class="cohort-top">
+                    <strong>Study 9: English 2004</strong>
+                    <span class="font-mono text-cyan">Cook's D = 0.325</span>
+                  </div>
+                  <p class="text-sm">Weight: 51.2% (common) / 17.8% (random). Hat = 0.178, DFFITS = &minus;0.710. Omitting it raises pooled RR to <strong class="text-teal">1.14 (1.07&ndash;1.22)</strong> and lowers I&sup2; to <strong class="text-teal">23.8%</strong>.</p>
+                </div>
+                <div class="cohort-highlight border-l-rose mt-05">
+                  <div class="cohort-top">
+                    <strong>Study 11: Cross 2007</strong>
+                    <span class="font-mono text-rose">Cook's D = 0.398</span>
+                  </div>
+                  <p class="text-sm">Weight: 13.9% (random), Hat = 0.139, DFFITS = 0.754. Omitting it lowers pooled RR to <strong class="text-teal">1.10 (1.03&ndash;1.17)</strong> and lowers I&sup2; to <strong class="text-teal">28.4%</strong>.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3 class="panel-title">Leave-One-Out Summary</h3>
+                <p class="text-sm">Pooled RR remained between <strong>1.10 and 1.14</strong> (log-RR 0.094–0.135) and remained statistically significant across all 17 iterations (all p &le; 0.0043).</p>
+                <div class="grid-2 gap-05 mt-05">
+                  <div class="metric-mini">
+                    <span class="label">Leave-One-Out RR</span>
+                    <strong class="font-mono">1.10 &ndash; 1.14</strong>
+                  </div>
+                  <div class="metric-mini">
+                    <span class="label">P-Value Range</span>
+                    <strong class="font-mono text-teal">all p &le; 0.0043</strong>
+                  </div>
+                </div>
+                <div class="info-note mt-05">
+                  Lin 2004 (#10) and Lee 2009 (#13) had studentized residuals just beyond &plusmn;1.96 (&minus;2.01 and &minus;2.02) reflecting lower estimates, but were not influential on the pooled result.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 11: SUBGROUP ANALYSES (FIGURES 4, 5 & TABLE 1)
+           ========================================== -->
+      <section class="slide" data-index="10" data-title="Subgroup Analysis">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">09 // Figures 4, 5 &amp; Table 1</div>
+            <h2 class="slide-title">Subgroup Syntheses: By Country &amp; By Sex</h2>
+            <p class="slide-subtitle">Stratified random-effects models evaluating geographic differences and sex-specific risk patterns.</p>
+          </div>
+          <div class="slide-body">
+            
+            <div class="tab-controls">
+              <button class="tab-btn active" id="tabFigCountry" type="button">Figure 4: By Country</button>
+              <button class="tab-btn" id="tabFigSex" type="button">Figure 5: By Sex</button>
+              <button class="tab-btn" id="tabSubTable" type="button">Table 1: Subgroup Summary</button>
+            </div>
+
+            <!-- Figure 4: Country Forest Plot -->
+            <div class="subgroup-view active" id="viewFigCountry">
+              <div class="forest-plot-card">
+                <div class="forest-scroll-x">
+                  <svg id="countryForestSvg" viewBox="0 0 920 460" class="forest-svg" role="img" aria-label="Figure 4: Forest plot by country"></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Figure 5: Sex Forest Plot -->
+            <div class="subgroup-view" id="viewFigSex">
+              <div class="forest-plot-card">
+                <div class="forest-scroll-x">
+                  <svg id="sexForestSvg" viewBox="0 0 920 440" class="forest-svg" role="img" aria-label="Figure 5: Forest plot by sex"></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table 1: Subgroup Meta-Analyses Summary -->
+            <div class="subgroup-view" id="viewSubTable">
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Subgroup</th>
+                      <th>k</th>
+                      <th>RR</th>
+                      <th>95% CI</th>
+                      <th>I&sup2; (%)</th>
+                      <th>&tau;&sup2;</th>
+                      <th>p (between)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-divider"><td colspan="7">BY SEX</td></tr>
+                    <tr><td>Female</td><td class="font-mono">6</td><td class="font-mono">1.05</td><td class="font-mono">0.87 &ndash; 1.26</td><td class="font-mono">57.9</td><td class="font-mono">0.0280</td><td rowspan="3" class="font-mono text-muted align-mid">0.610<br>(Q = 0.99, df = 2)</td></tr>
+                    <tr><td>Male</td><td class="font-mono">4</td><td class="font-mono">1.20</td><td class="font-mono">0.97 &ndash; 1.48</td><td class="font-mono">37.3</td><td class="font-mono">0.0201</td></tr>
+                    <tr><td>Male + Female</td><td class="font-mono">7</td><td class="font-mono text-teal">1.15</td><td class="font-mono">1.03 &ndash; 1.28</td><td class="font-mono">68.1</td><td class="font-mono">0.0089</td></tr>
+                    <tr class="table-divider"><td colspan="7">BY COUNTRY</td></tr>
+                    <tr><td>USA</td><td class="font-mono">11</td><td class="font-mono text-teal">1.16</td><td class="font-mono">1.09 &ndash; 1.24</td><td class="font-mono">45.7</td><td class="font-mono">0.0023</td><td rowspan="6" class="font-mono text-amber align-mid">0.0164<br>(Q = 13.88, df = 5)</td></tr>
+                    <tr><td>Finland</td><td class="font-mono">2</td><td class="font-mono">1.21</td><td class="font-mono">0.84 &ndash; 1.75</td><td class="font-mono">0.0</td><td class="font-mono">0</td></tr>
+                    <tr><td>Netherlands</td><td class="font-mono">1</td><td class="font-mono">1.60</td><td class="font-mono">0.89 &ndash; 2.87</td><td class="font-mono">&mdash;</td><td class="font-mono">&mdash;</td></tr>
+                    <tr><td>Australia</td><td class="font-mono">1</td><td class="font-mono">1.03</td><td class="font-mono">0.98 &ndash; 1.08</td><td class="font-mono">&mdash;</td><td class="font-mono">&mdash;</td></tr>
+                    <tr><td>Canada</td><td class="font-mono">1</td><td class="font-mono">1.12</td><td class="font-mono">0.86 &ndash; 1.46</td><td class="font-mono">&mdash;</td><td class="font-mono">&mdash;</td></tr>
+                    <tr><td>China</td><td class="font-mono">1</td><td class="font-mono">0.80</td><td class="font-mono">0.59 &ndash; 1.08</td><td class="font-mono">&mdash;</td><td class="font-mono">&mdash;</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid-2 mt-1">
+              <div class="card">
+                <h4 class="text-cyan">Sex Comparison (p = 0.610)</h4>
+                <p class="text-sm">There was no evidence that the association differed by sex (Q = 0.99, df = 2, p = 0.610). While men had a higher point estimate (RR 1.20 vs 1.05), confidence intervals overlapped.</p>
+              </div>
+              <div class="card">
+                <h4 class="text-amber">Country Differences (p = 0.0164, Exploratory)</h4>
+                <p class="text-sm">The association was clearest in US cohorts (RR 1.16, 95% CI 1.09–1.24). Because four of the six national groups contain only a single study, this result should be interpreted with caution.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 12: META-REGRESSION (TABLE 2 FROM PDF)
+           ========================================== -->
+      <section class="slide" data-index="11" data-title="Meta-Regression">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">10 // Table 2 (PDF)</div>
+            <h2 class="slide-title">Meta-Regression: Publication Year &amp; Sample Size</h2>
+            <p class="slide-subtitle">Univariable and multivariable models (REML) for log relative risk exploring sources of heterogeneity.</p>
+          </div>
+          <div class="slide-body">
+            <div class="grid-2 anim-fade-up">
+              <div class="card">
+                <div class="card-kicker text-cyan">Table 2. Meta-Regression Models (REML)</div>
+                <div class="table-container">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Model</th>
+                        <th>Moderator</th>
+                        <th>&beta; (SE)</th>
+                        <th>p-value</th>
+                        <th>R&sup2; / Residual I&sup2;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Year</td>
+                        <td>Publication Year</td>
+                        <td class="font-mono">&minus;0.0180 (0.0083)</td>
+                        <td class="font-mono text-teal font-bold">0.031</td>
+                        <td class="font-mono">0% / 53.7%</td>
+                      </tr>
+                      <tr>
+                        <td>Sample Size</td>
+                        <td>log(Sample size)</td>
+                        <td class="font-mono">0.0327 (0.0193)</td>
+                        <td class="font-mono">0.090</td>
+                        <td class="font-mono">68.8% / 18.5%</td>
+                      </tr>
+                      <tr class="table-divider-top">
+                        <td rowspan="2">Year + Sample Size</td>
+                        <td>Publication Year</td>
+                        <td class="font-mono text-cyan">&minus;0.0195 (0.0080)</td>
+                        <td class="font-mono text-teal font-bold">0.015</td>
+                        <td rowspan="2" class="font-mono align-mid">4.7% / 38.2%<br><small>(QM = 6.83, p = 0.033)</small></td>
+                      </tr>
+                      <tr>
+                        <td>log(Sample size)</td>
+                        <td class="font-mono">0.0391 (0.0241)</td>
+                        <td class="font-mono">0.105</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="card flex-col-center">
+                <h3 class="panel-title">Temporal Effect Attenuation</h3>
+                <p class="text-body mb-05">
+                  Publication year was significantly and inversely associated with effect size (<strong class="text-white">&beta; = &minus;0.0180 per year, p = 0.031</strong>).
+                </p>
+                <p class="text-sm text-muted mb-05">
+                  This corresponds to an approximately <strong class="text-rose">16% lower RR per decade</strong> of study publication: exp(&minus;0.18) &approx; 0.84. Earlier studies reported stronger associations than more recent cohorts.
+                </p>
+                <div class="cohort-highlight border-l-teal">
+                  <div class="card-kicker text-teal">Key Explanations:</div>
+                  <ul class="text-sm check-list mt-05">
+                    <li>Improved confounder control in modern studies (smoking, calories, physical activity, endoscopy screening).</li>
+                    <li>More comprehensive food frequency questionnaires with repeat measurement.</li>
+                    <li>Decreased intake contrast between highest and lowest intake categories over calendar time.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 13: DISCUSSION & BIOLOGICAL MECHANISMS
+           ========================================== -->
+      <section class="slide" data-index="12" data-title="Discussion &amp; Biology">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">11 // Biological Plausibility</div>
+            <h2 class="slide-title">Discussion: Carcinogenic Mechanisms</h2>
+            <p class="slide-subtitle">Biochemical and toxicological pathways supporting the observed 12% elevated CRC risk.</p>
+          </div>
+          <div class="slide-body">
+            <div class="grid-3 anim-fade-up">
+              <div class="card">
+                <div class="chem-badge bg-rose-soft text-rose">Fe</div>
+                <h3 class="panel-title">Heme Iron Catalysis</h3>
+                <p class="text-sm">Organic heme iron stimulates mucosal lipid peroxidation and catalyzes endogenous synthesis of cytotoxic aldehydes and fecal water components in the colon.</p>
+              </div>
+
+              <div class="card">
+                <div class="chem-badge bg-cyan-soft text-cyan">NOC</div>
+                <h3 class="panel-title">N-Nitroso Compounds (NOCs)</h3>
+                <p class="text-sm">Nitrates and nitrites in processed meats react with dietary secondary amines to form DNA-alkylating NOCs, promoting G&rarr;A transition mutations in colorectal tissue.</p>
+              </div>
+
+              <div class="card">
+                <div class="chem-badge bg-amber-soft text-amber">HCA</div>
+                <h3 class="panel-title">Thermal Mutagens (HCAs &amp; PAHs)</h3>
+                <p class="text-sm">High-temperature grilling and frying generate heterocyclic amines and polycyclic aromatic hydrocarbons requiring cytochrome P450 activation to form DNA adducts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 14: STRENGTHS & LIMITATIONS
+           ========================================== -->
+      <section class="slide" data-index="13" data-title="Strengths &amp; Limitations">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">12 // Critical Appraisal</div>
+            <h2 class="slide-title">Methodological Strengths &amp; Study Limitations</h2>
+            <p class="slide-subtitle">Synthesis of findings and inherent constraints highlighted in the meta-analysis report.</p>
+          </div>
+          <div class="slide-body">
+            <div class="grid-2 anim-fade-up">
+              <div class="card border-t-teal">
+                <h3 class="text-teal mb-05 flex-center gap-05">Methodological Strengths</h3>
+                <ul class="text-sm check-list">
+                  <li><strong>Large Evidence Base:</strong> ~1,379,000 participants and 14,357 verified incident CRC cases across 16 prospective cohorts.</li>
+                  <li><strong>Metric Standardization:</strong> Restricted to relative risk ratios (highest vs lowest category) for consistency.</li>
+                  <li><strong>Hartung-Knapp Adjustment:</strong> Controls for small-sample inflation of error rates under moderate heterogeneity.</li>
+                  <li><strong>Leave-One-Out Stability:</strong> The association remained statistically significant across all 17 leave-one-out iterations (p &le; 0.0043).</li>
+                </ul>
+              </div>
+
+              <div class="card border-t-rose">
+                <h3 class="text-rose mb-05 flex-center gap-05">Inherent Limitations</h3>
+                <ul class="text-sm check-list">
+                  <li><strong>Exposure Metric Differences:</strong> Units and intake contrasts varied across original studies (g/day, servings/day, times/week).</li>
+                  <li><strong>Exposure Aggregation:</strong> Red meat and combined red/processed meat were pooled together.</li>
+                  <li><strong>Cohort Overlap:</strong> Cross 2007 and Cross 2010 both derive from the NIH-AARP cohort, representing potential overlap.</li>
+                  <li><strong>Prediction Interval:</strong> 95% PI (0.94&ndash;1.34) includes 1.00, meaning that in a new setting the true association could be null or modestly positive.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 15: CONCLUSION & RECOMMENDATIONS
+           ========================================== -->
+      <section class="slide" data-index="14" data-title="Conclusion &amp; Guidance">
+        <div class="slide-scroll">
+          <div class="slide-header">
+            <div class="slide-badge">13 // Public Health Impact</div>
+            <h2 class="slide-title">Conclusion &amp; Public Health Recommendations</h2>
+            <p class="slide-subtitle">Summary of findings and clinical translation for cancer prevention.</p>
+          </div>
+          <div class="slide-body">
+            <div class="card conclusion-card mb-1 anim-fade-up">
+              <h3 class="panel-title">Summary of Findings</h3>
+              <p class="text-body text-white">
+                Across 17 prospective estimates, higher red/processed meat consumption was associated with a modest <strong class="text-rose">12% increase in colorectal cancer risk (RR 1.12, 95% CI 1.03&ndash;1.22)</strong>, with moderate heterogeneity (I&sup2; = 55.3%). The result was robust to the omission of any single study and showed no statistical evidence of publication bias.
+              </p>
+            </div>
+
+            <div class="grid-3 mb-1 anim-fade-up">
+              <div class="card">
+                <div class="card-kicker text-cyan">Dietary Guidelines</div>
+                <p class="text-sm">Aligns with <strong>WCRF / IARC</strong> recommendations to restrict red meat intake to &le;350–500g/week and minimize processed meat consumption.</p>
+              </div>
+              <div class="card">
+                <div class="card-kicker text-teal">Nutritional Substitution</div>
+                <p class="text-sm">Encourage replacing red and processed meats with legumes, poultry, fish, and dietary fiber to reduce colonic exposure to heme iron and NOCs.</p>
+              </div>
+              <div class="card">
+                <div class="card-kicker text-purple">Future Research</div>
+                <p class="text-sm">Continuous dose-response meta-analyses per 100g/day increments and gut microbiome metabolomic interactions are needed.</p>
+              </div>
+            </div>
+
+            <div class="text-center mt-1 anim-fade-up">
+              <h2 class="thankyou-title">Thank You</h2>
+              <p class="text-muted">Group 6 &bull; Questions &amp; Discussion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bottom HUD Navigation Bar -->
+    <footer class="hud-controls">
+      <div class="hud-left">
+        <div class="group-brand">
+          <span class="group-title">GROUP 6</span>
+          <span class="sep">&bull;</span>
+          <span class="sub-deck-title" id="hudSlideTitle">Title &amp; Overview</span>
+        </div>
+      </div>
+
+      <!-- Center Slide Dots (15 dots) -->
+      <div class="hud-center" id="dotsContainer" aria-label="Slide indicators"></div>
+
+      <!-- Right Action Controls -->
+      <div class="hud-right">
+        <span class="slide-counter" id="slideCounter">01 / 15</span>
+        <button class="btn-nav" id="btnPrev" type="button" title="Previous Slide (Left Arrow)">
+          <span>&larr;</span><span class="btn-text">Prev</span>
+        </button>
+        <button class="btn-nav btn-primary" id="btnNext" type="button" title="Next Slide (Right Arrow)">
+          <span class="btn-text">Next</span><span>&rarr;</span>
+        </button>
+        <button class="btn-nav icon-only" id="btnOverview" type="button" title="Slide Overview Grid (O)">
+          &#9638;
+        </button>
+        <button class="btn-nav icon-only" id="btnFullscreen" type="button" title="Toggle Fullscreen (F)">
+          &#x26F6;
+        </button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Slide Overview Modal (All 15 Slides) -->
+  <div class="overview-modal" id="overviewModal" aria-hidden="true">
+    <div class="overview-header">
+      <h2>Presentation Outline (15 Slides)</h2>
+      <button class="btn-nav" id="btnCloseOverview" type="button">Close (Esc)</button>
+    </div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
